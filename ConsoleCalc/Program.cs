@@ -8,24 +8,64 @@ class Calculator
         Console.OutputEncoding = Encoding.UTF8;
         while (true)
         {
-            Console.WriteLine("Калькулятор:");
-            Console.WriteLine("1. Сложение");
-            Console.WriteLine("2. Вычитание");
-            Console.WriteLine("3. Умножение");
-            Console.WriteLine("4. Деление");
-            Console.WriteLine("5. Выход");
+            Console.WriteLine("Calculator:");
+            Console.WriteLine("1. Addition");
+            Console.WriteLine("2. Substraction");
+            Console.WriteLine("3. Multiplication");
+            Console.WriteLine("4. Division");
+            Console.WriteLine("5. Exit");
 
-            Console.Write("Выберите операцию (1/2/3/4/5): ");
-            
-            // Код пишем тут
-            // Не забываем про break;
-            // Не забываем про деление на ноль
-            // Не забываем про некорректный ввод (например, буквы)
+            Console.Write("Please choose operation (1/2/3/4/5): ");
 
-            //Console.Write("Введите первое число: ");
 
-            //Console.Write("Введите второе число: ");
-
+            int num = int.Parse(Console.ReadLine());
+            if (num == 1)
+            {
+                Console.WriteLine("Please choose your first number: ");
+                int firstNumber = int.Parse(Console.ReadLine());
+                Console.WriteLine("Please choose your second number: ");
+                int secondNumber = int.Parse(Console.ReadLine());
+                var result = firstNumber + secondNumber;
+                Console.WriteLine("Your result is " + result);
+            }
+            if (num == 2)
+            {
+                Console.WriteLine("Please choose your first number: ");
+                int firstNumber = int.Parse(Console.ReadLine());
+                Console.WriteLine("Please choose your second number: ");
+                int secondNumber = int.Parse(Console.ReadLine());
+                var result = firstNumber - secondNumber;
+                Console.WriteLine("Your result is " + result);
+                    }
+            if (num == 3)
+            {
+                Console.WriteLine("Please choose your first number: ");
+                int firstNumber = int.Parse(Console.ReadLine());
+                Console.WriteLine("Please choose your second number: ");
+                int secondNumber = int.Parse(Console.ReadLine());
+                var result = firstNumber * secondNumber;
+                Console.WriteLine("Your result is " + result);
+            }
+            if (num == 4)
+            {
+                Console.WriteLine("Please choose your first number: ");
+                int firstNumber = int.Parse(Console.ReadLine());
+                Console.WriteLine("Please choose your second number: ");
+                int secondNumber = int.Parse(Console.ReadLine());
+                var result = firstNumber / secondNumber;
+                Console.WriteLine("Your result is " + result);
+            }
+            if (num == 5)
+            {
+                Console.WriteLine("Thank you for using Calculator! Goodbye!");
+            }
+            break;
         }
     }
 }
+
+
+
+
+
+
